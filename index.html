@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic blog page</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="res/img/badge.png">
+		<meta name="author" content="Chrtistoph Heidelmann">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A basic blog page tamplate to be used within any webpage">
+		<meta name="keywords" content="blog,netcentric">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript" src="scripts.js"></script>
+	</head>
+	<body class="main">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">The main header of the page</h1>
+				<img class="header__background" srcset="build/assets/mountains-320w.jpg 320w,
+	             build/assets/mountains-480w.jpg 480w,
+	             build/assets/mountains-800w.jpg 800w,
+	             build/assets/mountains-1200w.jpg 1200w"
+	     		sizes="(max-width: 320px) 280px,
+	            		(max-width: 480px) 440px,
+	            		(max-width: 920px) 800px,
+	            		1200px"
+	     		src="images/mountains-1200w.jpg" alt="mountains">
+			</div>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<button class="nav__toggleButton" 
+								data-toggle="menuToToggle">
+							Running
+						</button>
+						<ul class="nav nav--popup nav--collapsed" 
+							id="menuToToggle">
+							<li class="nav__item">
+								<a 	href="/shirts.html" 
+									title="All our running shirts">Shirts
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="/shoes.html" 
+								   title="All our running shoes">Shoes
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<a href="http://neighbor.com/" 
+						   title="The climbing shop of our neighbor" 
+						   target=_blank>
+								External neighbor
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Welcome to our shop</h2>
+				<section>
+					<h3>What we do</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit in elit tempor, eget consectetur mi gravida. Vivamus rutrum urna eget ipsum facilisis, dictum feugiat urna pellentesque. Morbi rutrum sed dui sit amet laoreet. Proin tincidunt mi in bibendum bibendum. Mauris eget augue et velit commodo porta.</p>
+				</section>
+				<section>
+					<h3>How we do it</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit in elit tempor, eget consectetur mi gravida. Vivamus rutrum urna eget ipsum facilisis, dictum feugiat urna pellentesque. Morbi rutrum sed dui sit amet laoreet. Proin tincidunt mi in bibendum bibendum. Mauris eget augue et velit commodo porta.</p>
+				</section>
+			<article>
+				<header>
+					<h3>Our last story</h3>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit in elit tempor, eget consectetur mi gravida. Vivamus rutrum urna eget ipsum facilisis, dictum feugiat urna pellentesque. Morbi rutrum sed dui sit amet laoreet. Proin tincidunt mi in bibendum bibendum. Mauris eget augue et velit commodo porta.</p>
+				<figure>
+					<img src="res/img/fascinating.gif" 
+						 alt="a fascinating image that shows fascinating things">
+					<figcaption>Fascination - nothing more</figcaption>
+				</figure>
+			</article>
+			<aside>
+				<h2>Our last stories</h2>
+				<article>
+					<a href="running-faster.html" title="Running faster"> 
+						<header>
+							<h4>Running faster</h4>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit in elit tempor, eget consectetur mi gravida. Vivamus rutrum urna eget ipsum facilisis, dictum feugiat urna pellentesque. Morbi rutrum sed dui sit amet laoreet. Proin tincidunt mi in bibendum bibendum. Mauris eget augue et velit commodo porta.</p>
+					</a>
+				</article>
+				<article>
+					<a href="jumping-faster.html" title="Jumping higher"> 
+						<header>
+							<h4>Jumping higher</h4>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit in elit tempor, eget consectetur mi gravida. Vivamus rutrum urna eget ipsum facilisis, dictum feugiat urna pellentesque. Morbi rutrum sed dui sit amet laoreet. Proin tincidunt mi in bibendum bibendum. Mauris eget augue et velit commodo porta.</p>
+					</a>
+				</article>
+			</aside>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a href="contact.html" title="Contact us">Contact</a>
+					</li>
+					<li>
+						<a href="imprint.html" title="Who built the site">Imprint</a>
+					</li>
+				</ul>
+			</nav>
+			<address>
+				<span class="address__name">Netcentric Ibérica SLU</span><br>
+				<span class="address__street">Camí Antic de València 54, 7-9a</span><br>
+				<span class="address__number">08005 Barcelona</span><br>
+				<span class="address__country">Spain</span><br>
+			</address>
+			<a class="footer__mail" href="mailto:info@netcentric.biz">info@netcentric.biz</a>
+			<a class="footer__tel" href="tel:+41435082028">+41 43 5082028</a>
+		</footer>
+	</body>
+</html>
