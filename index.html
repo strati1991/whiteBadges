@@ -72,8 +72,15 @@
 				</header>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit in elit tempor, eget consectetur mi gravida. Vivamus rutrum urna eget ipsum facilisis, dictum feugiat urna pellentesque. Morbi rutrum sed dui sit amet laoreet. Proin tincidunt mi in bibendum bibendum. Mauris eget augue et velit commodo porta.</p>
 				<figure>
-					<img src="res/img/fascinating.gif" 
-						 alt="a fascinating image that shows fascinating things">
+					<img srcset="build/assets/fascinating-320w.jpg 320w,
+		             build/assets/fascinating-480w.jpg 480w,
+		             build/assets/fascinating-800w.jpg 800w,
+		             build/assets/fascinating-1200w.jpg 1200w"
+		     		sizes="(max-width: 320px) 280px,
+		            		(max-width: 480px) 440px,
+		            		(max-width: 920px) 800px,
+		            		1200px"
+		     		src="build/assets/fascinating-1200w.jpg" alt="Fascinating">
 					<figcaption>Fascination - nothing more</figcaption>
 				</figure>
 			</article>

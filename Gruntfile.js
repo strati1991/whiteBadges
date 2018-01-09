@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 		  },
 		  files: [{
 		    expand: true,
-		    src: ['assets/**.{jpg,png}'],
+		    src: ['assets/**.{jpg,png,gif}'],
             dest: 'build/'
 		  }]
 		}
