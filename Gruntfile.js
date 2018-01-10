@@ -3,10 +3,12 @@ module.exports = function(grunt) {
   	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		sass: {                            // Task
-			dist: {                          // Target
-				files: {                         // Dictionary of files
-					'main.css' : 'src/styles/main.scss' 
+		compass: {                  
+			dist: {                   
+				options: {              
+					sassDir: 'src/styles',
+					cssDir: 'build',
+					environment: 'production'
 				}
 			}
 		},
@@ -30,16 +32,19 @@ module.exports = function(grunt) {
 		  files: [{
 		    expand: true,
 		    src: ['assets/**.{jpg,png,gif}'],
-            dest: 'build/'
+            dest: 'build'
 		  }]
 		}
 		},
 	});
+
+	grunt.loadNpmTasks('grunt-contrib-compass');
+
     grunt.loadNpmTasks('grunt-responsive-images');
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 
-	grunt.registerTask('default', ['sass','responsive_images']);
+	grunt.registerTask('default', ['compass','responsive_images']);
 
 };
 
